@@ -1,15 +1,13 @@
 /*
-    Потрібно написати програму, яка обчислить вартість покупки. 
-    Людина купила 4 ручки по 5.25 грн і 6 олівців по 3.50 грн. 
-    Командами JavaScript потрібно обрахувати загальну вартість і 
-    вивести результат в document.write (для вартостей і кількостей товарів постворювати окремі змінні).
+    Написати програму, яка видає користувачу ввести число. 
+    Після введення числа вистрибує алерт з оголошенням пори року,
+    до якої відноситься число (номер місяця), що ввів користувач.
+    Якщо число не входить в діапазон від 1 до 12, тоді неможливо.
 */
 
-let pen = 5.25;
-let pencil = 3.50;
+const months = 
+    ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-let penCount = 4;
-let pencilCount = 6;
-
-let generalPrice = penCount * pen + pencilCount * pencil;
-document.write('General price: ', generalPrice);
+let digit = prompt('Enter the desired number: ');
+let res = ()=>{if (1 >= digit || digit <= 12)return months[--digit]; else return 'Undefined value'};
+alert(`${res()}`);
