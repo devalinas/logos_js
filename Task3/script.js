@@ -1,13 +1,7 @@
 /*
-    Написати програму, яка видає користувачу ввести число. 
-    Після введення числа вистрибує алерт з оголошенням пори року,
-    до якої відноситься число (номер місяця), що ввів користувач.
-    Якщо число не входить в діапазон від 1 до 12, тоді неможливо.
+    Створіть програму, що виводить на екран перші 55 елементів послідовності 1 3 5 7 9 11 13 15 17 …
 */
 
-const months = 
-    ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-let digit = prompt('Enter the desired number: ');
-let res = ()=>{if (1 >= digit || digit <= 12)return months[--digit]; else return 'Undefined value'};
-alert(`${res()}`);
+for(let i = 1, count = 55; count > 0; i += 2, count--) {
+    document.write(i + ' ');
+}
